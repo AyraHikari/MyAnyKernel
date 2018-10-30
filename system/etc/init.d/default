@@ -1,0 +1,92 @@
+#!/system/bin/sh
+# Script Created by Ayra Hikari
+
+# Setup default governor and clock speed
+echo 0:1344000 > /sys/module/msm_performance/parameters/cpu_max_freq
+echo 1:1344000 > /sys/module/msm_performance/parameters/cpu_max_freq
+echo 2:1344000 > /sys/module/msm_performance/parameters/cpu_max_freq
+echo 3:1344000 > /sys/module/msm_performance/parameters/cpu_max_freq
+chmod 644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+echo 1344000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+echo 1344000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+echo 1344000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
+echo 1344000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
+echo 0:422400 > /sys/module/msm_performance/parameters/cpu_min_freq
+echo 1:422400 > /sys/module/msm_performance/parameters/cpu_min_freq
+echo 2:422400 > /sys/module/msm_performance/parameters/cpu_min_freq
+echo 3:422400 > /sys/module/msm_performance/parameters/cpu_min_freq
+chmod 644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+echo 422400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+echo 422400 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+echo 422400 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+echo 422400 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+chmod 644 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+chmod 644 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+chmod 644 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+echo 4:1094400 > /sys/module/msm_performance/parameters/cpu_max_freq
+echo 5:1094400 > /sys/module/msm_performance/parameters/cpu_max_freq
+echo 6:1094400 > /sys/module/msm_performance/parameters/cpu_max_freq
+echo 7:1094400 > /sys/module/msm_performance/parameters/cpu_max_freq
+chmod 644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+echo 1094400 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq
+echo 1094400 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq
+echo 1094400 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq
+echo 1094400 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq
+chmod 444 /sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq
+chmod 644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
+chmod 644 /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor
+chmod 644 /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
+chmod 644 /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+echo schedutil > /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+chmod 444 /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+echo 4:345600 > /sys/module/msm_performance/parameters/cpu_min_freq
+echo 5:345600 > /sys/module/msm_performance/parameters/cpu_min_freq
+echo 6:345600 > /sys/module/msm_performance/parameters/cpu_min_freq
+echo 7:345600 > /sys/module/msm_performance/parameters/cpu_min_freq
+chmod 644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+echo 345600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+echo 345600 > /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+echo 345600 > /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq
+chmod 644 /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+echo 345600 > /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+chmod 444 /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
