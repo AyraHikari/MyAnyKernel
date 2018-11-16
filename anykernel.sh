@@ -39,6 +39,17 @@ chmod +x $ramdisk/sbin/spa
 dump_boot;
 
 # begin ramdisk changes
+ui_print "                                             ";
+ui_print "           __     __    _                    ";
+ui_print "           \ \   / /   | |                   ";
+ui_print "            \ \_/ /   _| | ____ _            ";
+ui_print "             \   / | | | |/ / _' |           ";
+ui_print "              | || |_| |   < (_| |           ";
+ui_print "              |_| \__,_|_|\_\__,_|           ";
+ui_print "                  K E R N E L                ";
+ui_print "                  Ayra Hikari                ";
+ui_print "                                             ";
+ui_print "                                             ";
 
 # fstab.qcom
 if [ -e fstab.qcom ]; then
