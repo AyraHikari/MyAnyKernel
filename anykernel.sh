@@ -130,6 +130,7 @@ fi;
 # init.rc
 backup_file init.rc;
 grep "import /init.spectrum.rc" init.rc >/dev/null || sed -i '1,/.*import.*/s/.*import.*/import \/init.spectrum.rc\n&/' init.rc
+insert_line init.rc "init.yuka.rc" after "import /init.usb.rc" "import /init.yuka.rc";
 # end ramdisk changes
 
 write_boot;
