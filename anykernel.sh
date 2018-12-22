@@ -6,7 +6,7 @@
 properties() {
 kernel.string=Yuka Kernel
 do.devicecheck=1
-do.modules=1
+do.modules=0
 do.cleanup=1
 do.cleanuponabort=1
 do.system=1
