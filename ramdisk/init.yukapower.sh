@@ -27,8 +27,8 @@ write /sys/module/lowmemorykiller/parameters/minfree "9466,14199,28398,47330,662
 # Governor
 chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/interactive/*
-chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/interactive/*
+# chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/interactive/*
+# chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/interactive/*
 
 
 
@@ -36,7 +36,7 @@ chmod 0644 /sys/devices/system/cpu/cpu4/cpufreq/interactive/*
 write /proc/sys/vm/laptop_mode 1
 write /proc/sys/vm/swappiness 60
 write /proc/sys/vm/vfs_cache_pressure 100
-write /proc/sys/vm/vm_dirty_ratio 50
+# write /proc/sys/vm/vm_dirty_ratio 50
 write /proc/sys/vm/dirty_background_ratio 20
 
 # I/O Scheduler
