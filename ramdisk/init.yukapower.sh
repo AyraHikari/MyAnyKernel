@@ -22,7 +22,7 @@ sleep 10
 write /sys/module/msm_thermal/parameters/enabled "N"
 
 # Low memory killer
-write /sys/module/lowmemorykiller/parameters/minfree "9466,14199,28398,47330,66262,70995"
+# write /sys/module/lowmemorykiller/parameters/minfree "9466,14199,28398,47330,66262,70995"
 
 # Governor
 chmod 0644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
